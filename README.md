@@ -36,7 +36,7 @@ Pre-built images using this repository are available on [docker hub](https://hub
 2) Run the created image
 
     ```
-    docker run -d -p 3080:80 -p 2222:22P --name=syntheaViz syntheaviz
+    docker run -d -p 3080:80 -p 2222:22 --name=syntheaViz syntheaviz
     ```
 
-Once running, the Synthetic Patient Visualization can be accessed via ```http://localhost:3080/synthea/synthea_upload.php'''
+Once running, the Synthetic Patient Visualization can be accessed via ```http://localhost:3080/synthea/synthea_upload.php```
