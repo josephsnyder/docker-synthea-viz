@@ -1,4 +1,4 @@
-FROM centos
+FROM centos/httpd
 
 RUN echo "multilib_policy=best" >> /etc/yum.conf
 RUN yum  -y update && \
@@ -48,5 +48,5 @@ RUN cd /var/www/html && \
     git clone git://github.com/OSEHRA-Sandbox/SyntheaPatientViz.git synthea && \
     cd synthea && \
     mkdir local
-ENTRYPOINT /usr/sbin/sshd && /usr/sbin/apachectl -DFOREGROUND
+
 EXPOSE 22 8080
